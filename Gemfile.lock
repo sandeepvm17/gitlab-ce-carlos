@@ -109,7 +109,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     babosa (1.0.2)
     base32 (0.3.2)
-    batch-loader (1.4.0)
+    batch-loader (2.0.1)
     bcrypt (3.1.12)
     bcrypt_pbkdf (1.0.0)
     benchmark-ips (2.3.0)
@@ -630,7 +630,9 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
-    mimemagic (0.3.3)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -1164,7 +1166,7 @@ DEPENDENCIES
   aws-sdk
   babosa (~> 1.0.2)
   base32 (~> 0.3.0)
-  batch-loader (~> 1.4.0)
+  batch-loader (~> 2.0.1)
   bcrypt_pbkdf (~> 1.0)
   benchmark-ips (~> 2.3.0)
   benchmark-memory (~> 0.1)
