@@ -630,7 +630,9 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
-    mimemagic (0.3.3)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -796,7 +798,7 @@ GEM
       httpclient
       json-jwt (>= 1.9.0)
       rack
-    rack-protection (2.0.5)
+    rack-protection (3.0.6)
       rack
     rack-proxy (0.6.0)
       rack
@@ -1001,11 +1003,11 @@ GEM
     shellany (0.0.1)
     shoulda-matchers (4.0.1)
       activesupport (>= 4.2.0)
-    sidekiq (5.2.7)
+    sidekiq (5.2.9)
       connection_pool (~> 2.2, >= 2.2.2)
-      rack (>= 1.5.0)
+      rack (~> 2.0)
       rack-protection (>= 1.5.0)
-      redis (>= 3.3.5, < 5)
+      redis (>= 3.3.5, < 4.2)
     sidekiq-cron (1.0.4)
       fugit (~> 1.1)
       sidekiq (>= 4.2.1)
@@ -1371,7 +1373,7 @@ DEPENDENCIES
   sentry-raven (~> 2.9)
   settingslogic (~> 2.0.9)
   shoulda-matchers (~> 4.0.1)
-  sidekiq (~> 5.2.7)
+  sidekiq (~> 5.2.9)
   sidekiq-cron (~> 1.0)
   simple_po_parser (~> 1.1.2)
   simplecov (~> 0.18.5)
